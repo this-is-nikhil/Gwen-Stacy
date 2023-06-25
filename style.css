@@ -1,0 +1,428 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+
+.favicon link{
+    border-radius: 50%;
+
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #080808;
+    color: #fff;
+}
+
+.responsive{
+    display: none;
+}
+
+.header{
+    background-image: url("project_img2.jpg");
+    background-size: cover;
+    background-position: 90% 50%;
+    width: 100%;
+    height: 100vh;
+}
+
+.logo{
+    height: 90px;
+    width: 180px;
+}
+
+.container{
+    padding: 10px 10%;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    position: relative;
+}
+
+nav ul li a::after{
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    position:absolute;
+    left: 0px;
+    bottom: -6px;
+    transition: 0.3s;
+}
+
+nav ul li a:hover::after{
+    width: 100%;
+}
+
+.header-text{
+    margin-top: 20%;
+    font-size: 30px;
+}
+.header-text h1{
+    margin-top: 20px;
+    font-size: 60px;
+}
+
+.header-text h1 span{
+    color: #ff004f;
+    
+}
+
+
+
+/* <!-- ----------About Section------------------ --> */
+
+
+
+.about{
+    padding: 80px 0;
+    color: #ababab;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.column1{
+    flex-basis: 35%;
+}
+
+.column1 img{
+    width: 100%;
+    border-radius: 15px;
+}
+
+.column2{
+    flex-basis: 60%;
+}
+
+.subtitle{
+    font-size:60px;
+    font-weight: 600;
+    color: #fff;
+}
+
+#p1{
+    margin-top: 20px;
+}
+#p2{
+    margin-top: 20px;
+}
+#p3{
+    margin-top: 20px;
+}
+#p4{
+    margin-top: 20px;
+}
+#p5{
+    margin-top: 20px;
+}
+#p6{
+    margin-top: 20px;
+}
+#p7{
+    margin-top: 20px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #fff;
+}
+
+
+
+
+/* <!-----------------------------Movies Section----------------------------------> */
+
+
+
+.movie-section{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+
+.box{
+    height: 600px;
+    width: 30%;
+    /* border: 2px solid white; */
+    margin-top: 50px;
+    border-radius: 15px;
+    transition: background 0.5s, transform 0.5s;
+    
+}
+.box-image{
+    height: 560px;
+    background-size: cover;
+    border-radius: 15px;   
+}
+.box-content{
+    margin-top: 5px;
+    margin-right: 5px;
+    margin-left: 5px;
+    margin-bottom: 50px;
+}
+#info{
+    padding-left: 5px;
+    padding-top: 5px;
+}
+.box-content a{
+    text-decoration: none;
+    list-style: none;
+    color:#fff;
+}
+.box:hover{
+    background-color: #ff004f;
+    transition: 0.3s;
+    transform: translateY(-10px);
+
+}
+#info:hover{
+    color: #080808;
+    transition: 0.3s;
+}
+
+
+/* <-----------------------------Friends Section----------------------------------> */
+
+.friends{
+    padding: 50px 0;
+}
+.friends-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+    
+}
+.friends-image{
+    background-size: cover;
+    height: 400px;
+    width: 300px;
+    margin-left: 25px;
+}
+.friends-list div{
+    background-color: #262626;
+    font-size: 13px;
+    font-weight: 300;
+    transition: background 0.5s, transform 0.5s;
+    border-radius: 10px;
+}
+.friends-list div h2{
+    font-size: 30px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    margin-left: 25px;
+    margin-top: 10px;
+}
+.friends-list div a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 12px;
+    margin-top: 20px;
+    margin-left: 25px;
+    margin-bottom: 25px;
+    display: inline-block;
+}
+.friends-list div p{
+    margin-left: 25px;
+    font-weight: 400;
+}
+.friends-list div:hover{
+    background-color: #ff004f;
+    transform: translateY(-10px);
+    /* color: #080808; */
+}
+.friends-list div:hover h2{
+    color: #080808;
+}
+.friends-list div a:hover{
+    color: #080808;
+}
+
+/* <!-----------------------------Enemies Section----------------------------------> */
+
+.enemies-list{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+}
+
+.enemy{
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.enemy-image{
+    background-size: cover;
+    height: 500px;
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+    transition: transform 0.5s;
+}
+
+.layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.6), #ff004f);
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    transition: height 0.5s;   
+    
+}
+.layer h2{
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.layer a{
+    color:#ff004f;
+    margin-top: 20px;
+    text-decoration: none;
+    line-height: 50px;
+    font-size: 18px;
+    background-color: #fff;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    text-align: center;
+}
+
+.enemy:hover .enemy-image{
+    transform:scale(1.1);
+}
+.enemy:hover .layer{
+    height: 100%;
+}
+
+.btn{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #ff004f;
+    padding: 14px 50px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #fff;
+    transition: background 0.5s;
+}
+
+.btn:hover{
+    background-color: #ff004f;
+}
+
+/* <!-----------------------------Footer Section----------------------------------> */
+
+.footer{
+    background-color: #262626;
+    height: 60px;
+    width: 100%;
+}
+.footer-items{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ababab;
+    padding-top: 5px;
+}
+.footer-items i{
+    color: #ff004f;
+}
+
+.footer-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-links .insta{
+    color: #E4405F;
+    text-decoration: none;
+    font-size: 25px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+.footer-links .linkdin{
+    color: #0A66C2;
+    text-decoration: none;
+    font-size: 25px;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+.footer-links .twitter{
+    color: #00acee;
+    text-decoration: none;
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+
+
+
+/* <!-----------------------------responsive Section----------------------------------> */
+
+
+
+@media(max-width:600px){
+    .header{
+        display: none;
+    }
+    .about{
+        display: none;
+    }
+    .friends{
+        display: none;
+    }
+    .movies{
+        display: none;
+    }
+    .enemies{
+        display: none;
+    }
+    .footer{
+        display: none;
+    }
+    .responsive{
+        margin-top: 300px;
+        display: block;
+        color:#fff;
+    }
+    .response{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+}
